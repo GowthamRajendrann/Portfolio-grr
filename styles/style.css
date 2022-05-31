@@ -24,8 +24,8 @@
 }
 
 .light-mode {
-  --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-primary: #ffffff;
+  --color-secondary: #f56692;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -1021,5 +1021,33 @@ section {
 
 .contact-content-container .right-contact .input-control-2 :last-child {
   margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 2rem;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 50%;
+    width: 100%;
+    background-color: transparent;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .controls .control {
+    margin: 1rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

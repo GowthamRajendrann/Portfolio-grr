@@ -23,17 +23,17 @@
 }
 
 .light-mode {
-    --color-primary: #FFFFFF;
-    --color-secondary: #F56692;
-    --color-white: #454e56;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
-    --color-grey-1: #6c7983;
-    --color-grey-2: #6c7983;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #f8f8f8;
-    --color-grey-6: #12181b;
+  --color-primary: #ffffff;
+  --color-secondary: #f56692;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
 }
 
 body {
@@ -252,9 +252,9 @@ section {
   &:active {
     transform: translateY(-5px);
   }
-  &:hover{
+  &:hover {
     background-color: var(--color-secondary);
-    i{
+    i {
       color: var(--color-white);
     }
   }
@@ -741,3 +741,4 @@ section {
     }
   }
 }
+@import "./media";

@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 2rem;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    width: 100%;
+    background-color: transparent;
+    transform: translateX(-50%);
+    .control {
+      margin: 1rem 0;
+    }
+  }
+}
