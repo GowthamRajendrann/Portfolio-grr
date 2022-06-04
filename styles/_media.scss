@@ -2,8 +2,54 @@
   header {
     padding: 0;
   }
-  header .right-header {
-    padding: 2rem;
+  .header-content {
+    display: block;
+    padding-bottom: 5rem;
+    .right-header {
+      width: 90%;
+      margin: 0 auto;
+      padding: 1.5rem;
+      align-items: center;
+      .name {
+        font-size: 2rem;
+        text-align: center;
+      }
+      p {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+    .left-header {
+      margin-top:1rem;
+      margin-bottom:1rem;
+      justify-content:center;
+      max-height: 50vh;
+      .header-shape {
+        display: none;
+      }
+      .profile-image{
+        margin: 0 auto;
+        background-color: var(--color-primary);
+        height:35vh ;
+        width: 35vh;
+        img{
+          border-radius: 50%;
+          filter: grayscale(0);
+          border: 2px solid var(--color-secondary);
+          transition: var(--transition-all);
+          &:hover {
+            transform: translate(2px,-2px);
+          border: 5px solid var(--color-secondary);
+
+          }
+        }
+      }
+    }
+  }
+
+  .theme-button {
+    width: 50px;
+    height: 50px;
   }
   .controls {
     top: auto;
@@ -12,10 +58,11 @@
     justify-content: center;
     left: 50%;
     width: 100%;
+    height: 9%;
     background-color: transparent;
     transform: translateX(-50%);
     .control {
-      margin: 1rem 0;
+      margin: 1rem 0.6rem;
     }
   }
 }

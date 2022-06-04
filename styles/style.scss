@@ -100,7 +100,7 @@ section {
 
 .btn-container {
   display: flex;
-  align-self: flex-start;
+  // align-self: flex-start;
   .main-btn {
     border-radius: 30px;
     color: inherit;
@@ -277,7 +277,6 @@ section {
   min-height: 100vh;
   .left-header {
     display: flex;
-    align-items: center;
     position: relative;
     .header-shape {
       transition: var(--transition-all);
@@ -293,7 +292,8 @@ section {
     .profile-image {
       border-radius: var(--br-sm-2);
       height: 84%;
-      width: 65%;
+      width: auto;
+      margin-top:4rem;
       margin-left: 4rem;
       background-color: var(--color-black);
       transition: var(--transition-all);
@@ -317,7 +317,7 @@ section {
     align-items: flex-start;
     padding-right: 16rem;
     .name {
-      font-size: rem;
+      font-size: 3rem;
       span {
         color: var(--color-secondary);
       }

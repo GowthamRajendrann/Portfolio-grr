@@ -123,8 +123,6 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
 .btn-container .main-btn {
@@ -365,9 +363,6 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
 }
 
@@ -388,7 +383,8 @@ section {
 .header-content .left-header .profile-image {
   border-radius: var(--br-sm-2);
   height: 84%;
-  width: 65%;
+  width: auto;
+  margin-top: 4rem;
   margin-left: 4rem;
   background-color: var(--color-black);
   -webkit-transition: var(--transition-all);
@@ -430,7 +426,7 @@ section {
 }
 
 .header-content .right-header .name {
-  font-size: rem;
+  font-size: 3rem;
 }
 
 .header-content .right-header .name span {
@@ -1028,8 +1024,59 @@ section {
   header {
     padding: 0;
   }
-  header .right-header {
-    padding: 2rem;
+  .header-content {
+    display: block;
+    padding-bottom: 5rem;
+  }
+  .header-content .right-header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-content .right-header .name {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .header-content .right-header p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .header-content .left-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-height: 50vh;
+  }
+  .header-content .left-header .header-shape {
+    display: none;
+  }
+  .header-content .left-header .profile-image {
+    margin: 0 auto;
+    background-color: var(--color-primary);
+    height: 35vh;
+    width: 35vh;
+  }
+  .header-content .left-header .profile-image img {
+    border-radius: 50%;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    border: 2px solid var(--color-secondary);
+    -webkit-transition: var(--transition-all);
+    transition: var(--transition-all);
+  }
+  .header-content .left-header .profile-image img:hover {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+    border: 5px solid var(--color-secondary);
+  }
+  .theme-button {
+    width: 50px;
+    height: 50px;
   }
   .controls {
     top: auto;
@@ -1043,12 +1090,13 @@ section {
             justify-content: center;
     left: 50%;
     width: 100%;
+    height: 9%;
     background-color: transparent;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
   .controls .control {
-    margin: 1rem 0;
+    margin: 1rem 0.6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
